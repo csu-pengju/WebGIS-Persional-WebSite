@@ -1,0 +1,150 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    margin:0 30px 30px 30px;
+    /*padding-top: 30px;*/
+    width: 100%;
+    /*text-align: center;*/
+    /*background-color: red;*/
+    height: 100%;
+    background-color: #f1f1f1;
+
+}
+.content-left{
+    float: left;
+    width: 50%;
+    border-right: 1px solid darkslategray;
+    margin: auto;
+    margin-left: 10px;
+    background-color: #fff;
+}
+.content .latest{
+    font-size: 32px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-align: center;
+    padding-top: 30px;
+    /*width: 200px;*/
+}
+.content-left .latest:after{
+    content: '';
+    position: absolute;
+    left: 23%;
+    top:670px;
+    height: 2px;
+    width: 160px;
+    background-color: #32b66b;
+    border-style: dot-dash;
+}
+.projects .latest:after{
+    content: '';
+    position: absolute;
+    left: 71%;
+    top:670px;
+    height: 2px;
+    width: 200px;
+    background-color: #32b66b;
+}
+.content-left ul{
+    margin-top: 25px;;
+}
+.content-left li{
+    width: 90%;
+    margin-left: 2%;
+    height: auto;
+    /*background-color: #f8f6f6;*/
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px 10px 25px 10px;
+}
+.content li:hover{
+    /*background-color: rgba(255,255,255,0.9);*/
+    cursor: pointer;
+}
+.content-left li .blog-title-box{
+    padding-top: 8px;
+    padding-bottom:10px;
+    padding-left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: crimson;
+    display: flex;
+    text-align: center;
+    /*background-color: #fff;*/
+    background-color: #fdf8ed;
+    border-radius: 10px;
+}
+.blog-id{
+    display: inline;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/month-day.png");
+    background-size: 100% 100%;
+}
+
+.blog-id .date-day{
+    color: white;
+    height: 30px;
+
+}
+.blog-id .date-month{
+    color: white;
+    display: block;
+    height: 25px;
+    font-size: 20px;
+    vertical-align: bottom;
+    padding-top: 5px;
+}
+.blog-title-box .blog-title{
+    padding-left: 15px;
+}
+.blog-title a{
+    color: #f60;
+}
+.blog-title {
+    vertical-align: top;
+    height: 60px;
+    font-size: 25px;
+    color: #f60;
+}
+
+.blog-title p{
+    height: 40px;
+    vertical-align: top;
+}
+.blog_author_time{
+    display: block;
+    padding:0px;
+    margin: 0px;
+    height: 30px;
+    /*background-color: green;*/
+}
+
+.blog-title .blog-author{
+    float: left;
+    font-size: 15px;
+    color: gray;
+}
+.blog-title .blog-time{
+    font-size: 15px;
+    color: gray;
+}
+
+.content-left li .blog-abstract-box{
+    padding-left: 10px;
+    /*background-color: #f8f8f8;*/
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-indent: 1.5em;
+    font-weight: normal;
+    padding-top: 10px;
+}
+.content-right{
+    float: right;
+    width: 50%;
+}

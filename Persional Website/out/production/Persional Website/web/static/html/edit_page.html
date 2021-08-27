@@ -1,0 +1,90 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MarkDown</title>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="../../WEB-INF/support/editormd/examples/js/jquery.min.js"></script>-->
+<!--    <script src="../../WEB-INF/support/editormd/editormd.min.js"></script>-->
+    <script src="../../support/editormd/editormd.min.js"></script>
+    <link rel="stylesheet" href="../../support/editormd/examples/css/style.css">
+    <link rel="stylesheet" href="../../support/editormd/css/editormd.css">
+    <link rel="stylesheet" href="../css/edit_page.css">
+
+    <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
+    <script src="../../support/editormd/lib/flowchart.min.js"></script>
+    <script src="../js/edge_pageControl.js"></script>
+</head>
+<script>
+    var  edgePageControl= new EdgePageControl({});
+</script>
+<body>
+<div id="layout">
+    <header>
+    </header>
+    <div id="blog-editormd">
+        <textarea style="display:none;" class="editormd-html-textarea" id="editormd"></textarea>
+        <textarea class="editormd-html-textarea" name="text" id="editormdhtml"></textarea>
+    </div>
+</div>
+<div class="otherInfo_box">
+    <div class="edit_author">
+        <span>作者：</span>
+        <input type="text" name="author" placeholder="请输入作者昵称/姓名">
+    </div>
+
+    <div class="blog_file_name">
+        <span>文件名：</span>
+        <input type="text" name="fileName" placeholder="请输入保存文件名">
+    </div>
+
+</div>
+<div class="edit_title">
+    <span>标题：</span>
+    <input type="text" name="title" placeholder="请输入文章名称">
+</div>
+<div style="display: flex;align-items: center;justify-content: center">
+    <div class="blog_project">
+        <input type="radio" value="blog" name="blog_type" class="wenzhang_type" >&nbsp;&nbsp;博客&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" value="project"name="blog_type"  class="wenzhang_type">&nbsp;&nbsp;项目
+    </div>
+    <div class="submit_blog_box">
+
+        <input type="submit" value="提交" onclick="edgePageControl.submit_blog()" />
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    (function() {
+    }).call(this);
+    var testEditor = editormd("blog-editormd", {
+        width   : "90%",
+        height  : 700,
+        flowChart: true,
+        emoji: true,
+        syncScrolling : "single",
+        path    : "../../support/editormd/lib/",
+        imageUpload : true,
+        imageFormats : ["jpg","jpeg","gif","png","bmp","webp"],
+        // imageUploadURL : "<%=basePath%>PicSvl",
+        saveHTMLToTextarea : true,
+    });
+    testEditor.config({
+        tocm : true,
+        tocContainer : "",
+        tocDropdown   : false
+    });
+
+
+</script>
+
+</body>
+</html>

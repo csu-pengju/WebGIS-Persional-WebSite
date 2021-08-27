@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>Daisy's Desktop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="../../support/jquery-3.4.1.min.js"></script>
+    <script src="../../support/ProjectionUtils.js"></script>
+    <link rel="stylesheet" href="../../support/v6.3.1-dist/ol.css">
+    <link rel="stylesheet" href="../css/MapControl.css">
+    <script src="../../support/v6.3.1-dist/ol.js"></script>
+    <script src="../js/initDesktop.js"></script>
+    <script src="../js/UUID.js"></script>
+    <script src="../js/MapControl.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=8b6b3261c4d70b409feaa273ada901f2"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG8e7oxBemSJCZMH_0kXUxXrsV8Us0ak8&callback=initGoogleMap"
+            type="text/javascript"></script>
+
+</head>
+<body>
+<button onclick="mapControl.setCurrentOperation('Point')">Point</button>
+<button onclick="mapControl.setCurrentOperation('LineString')">LineString</button>
+<button onclick="mapControl.setCurrentOperation('Polygon')">Polygon</button>
+<div id="map"></div>
+</body>
+</html>

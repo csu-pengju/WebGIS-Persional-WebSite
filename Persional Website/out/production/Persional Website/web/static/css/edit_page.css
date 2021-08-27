@@ -1,0 +1,70 @@
+
+.otherInfo_box,.edit_title, .submit_blog_box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: black;
+}
+.otherInfo_box div, .edit_title{
+    display: flex;
+    height: 50px;
+    font-size: 22px;
+    align-items: center;
+}
+.otherInfo_box span{
+    width: 100px;
+}
+
+.otherInfo_box input{
+    width: 200px;
+    font-size: 20px;
+    height: 35px;
+}
+.otherInfo_box  .blog_file_name span{
+    margin-left: 50px;
+}
+.edit_title span{
+    width: 100px;
+}
+.edit_title input{
+    width: 550px;
+    font-size: 20px;
+    height: 35px;
+}
+.submit-blog-box{
+    width: 50px;
+    align-items: center;
+    align-content: center;
+}
+.blog_project {
+    width:250px;
+    display: flex;
+    margin-left: 50px;
+    color: black;
+    font-size: 22px;
+    vertical-align: bottom;
+    padding-top: 10px;
+}
+.blog_project input{
+
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+.submit_blog_box input{
+
+    margin-top: 10px;
+    width: 350px;
+    height: 40px;
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #7cbf1f;
+    border-style: none;
+    border-radius: 5px;
+    letter-spacing: 40px;
+    padding-left: 30px;
+}
+.submit-blog-box input:hover{
+    background-color: #22820e;
+}

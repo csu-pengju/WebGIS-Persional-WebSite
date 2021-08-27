@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin:0;
+    border:0;
+}
+.introudction {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+}
+.introudction p{
+    white-space:normal;
+    word-wrap:break-word;
+    word-break:break-all;
+    color: black;
+    font-size: 24px;
+    font-family: "Bodoni MT";
+}
+.projects_box{
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    padding-top: 40px;
+}
+.projects_box .project{
+    float: left;
+    width: 32%;
+    height: 500px;
+    padding:0px 3px 10px 0px;
+    /*border:1px solid red;*/
+    margin-bottom: 50px;
+}
+.projects_box .image_box{
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    border: 1px solid green;
+}
+.projects_box .image_box img{
+    width: 300px;
+    height: 400px;
+}
+.projects_box .abstract_box{
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+.projects_box .abstract_box p{
+    color: black;
+    font-size: 22px;
+    line-height: 25px;
+    max-height: 80px;
+    font-family: "Bodoni MT";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    /*white-space:normal;*/
+    word-wrap:break-word;
+    /*word-break:break-all;*/
+    padding-bottom: 30px;
+}
