@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlogList</title>
+    <link rel="stylesheet" href="../css/blog_template.css">
+    <script src="../../support/jquery-3.4.1.min.js"></script>
+    <script src="../js/blog_list.js"></script>
+    <style>
+
+        li{
+            list-style-type: none;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+    </style>
+    <script src="../js/blog_template.js"></script>
+</head>
+<body>
+
+<div class="blog_container" style="margin-left: 15%">
+<div class="top-image" style="background-color:olivedrab;background-image:url(../../static/images/bg.jpg); height: 150px;margin-bottom: 10px">
+</div>
+    <div>
+        <span><a href="../../index.jsp" style="text-decoration: none;margin-left: 12px;margin-top:5px;font-size: 22px">首页</a></span>
+    </div>
+    <div>
+        <ul id="blog_container_ul">
+        </ul>
+    </div>
+
+
+</div>
+</body>
+<script>
+    (function() {
+    }).call(this);
+    var blogList = new BlogList({
+    });
+    blogList.init()
+</script>
+</html>

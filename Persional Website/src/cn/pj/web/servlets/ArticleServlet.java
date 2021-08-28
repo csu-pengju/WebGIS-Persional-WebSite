@@ -2,13 +2,16 @@ package cn.pj.web.servlets;
 
 import cn.pj.web.domain.ArticleInfo;
 import cn.pj.web.services.ArticleService;
+import net.sf.json.JSONException;
+import net.sf.json.JSONObject;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
 import java.util.Random;
 
 @WebServlet(name = "ArticleServlet", value = "/ArticleServlet")
@@ -44,10 +47,16 @@ public class ArticleServlet extends HttpServlet {
         articleInfo.setDay("");
         articleInfo.setTitle(blog_title);
         articleInfo.setBlog_abstract("");
+
+        articleInfo.setBlog_type(blog_type);
+        articleInfo.setDay(request.getParameter("blog_day"));
+        articleInfo.setMonth(request.getParameter("blog_month"));
+        articleInfo.setBlog_html(blog_html);
+        articleInfo.setBlog_md(blog_md);
+//       保存文件,并且判断文件名是否已经存在
+        blog_fileName = articleService.generateHtmlFile(blog_md,blog_html, blog_fileName, localPath);
         articleInfo.setFileName(blog_fileName);
-//       保存文件
-        articleService.generateHtmlFile(blog_html, localPath + blog_fileName+".md");
-        articleService.generateHtmlFile(blog_html, localPath + blog_fileName+".html");
+
         String data = "";
         boolean res = articleService.insertArticleInfo(articleInfo);
         if (res){
@@ -57,6 +66,8 @@ public class ArticleServlet extends HttpServlet {
             data = "{'success':'false'," +
                     "'message':'failed to insert blog in db '}";
         }
+
+
         out.write(data);
     }
 }

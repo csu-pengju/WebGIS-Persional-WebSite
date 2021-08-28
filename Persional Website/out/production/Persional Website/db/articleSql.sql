@@ -1,4 +1,5 @@
 
+
 DROP TABLE IF EXISTS "blog_articles";
 
 CREATE TABLE blog_articles(
@@ -12,7 +13,8 @@ CREATE TABLE blog_articles(
 	"bloglink" text,
 	"blog_html" text,
 	"blog_md" text,
-	"blog_fileName" text
+	"blog_filename" text,
+	"blog_type" text not null DEFAULT 'blog'
 );
 insert into blog_articles(blog_title, blog_author, blog_day,blog_month, blog_abstract) values('dsd','dsd',
 '23','Aug','dsd')

@@ -13,6 +13,7 @@ public class ArticleInfo {
     private String blog_md;
     private String blog_html;
     private String fileName;
+    private String blog_type;
 
     public String getAuthor(){
         return blog_author;
@@ -95,5 +96,13 @@ public class ArticleInfo {
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
+    }
+
+    public String getBlog_type() {
+        return blog_type;
+    }
+
+    public void setBlog_type(String blog_type) {
+        this.blog_type = blog_type;
     }
 }

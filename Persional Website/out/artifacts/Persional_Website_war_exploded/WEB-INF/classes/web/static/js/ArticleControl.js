@@ -48,8 +48,6 @@ ArticleControl.prototype.CreateArticleDom = function (){
      */
     var me = this;
     me.ul = document.getElementsByClassName("latest-ul")[0]
-
-
     for(var i=0;i<1; i++){
         me.li = $("<li>").appendTo(me.ul)
         me.li_div = $("<div>").appendTo(me.li).addClass("blog")
@@ -64,7 +62,6 @@ ArticleControl.prototype.CreateArticleDom = function (){
         me.span_blog_author = $("<span>").appendTo(me.span_blog_author_time).addClass("blog-author")
         me.span_blog_time = $("<span>").appendTo(me.span_blog_author_time).addClass("blog-time")
         me.p_abstract = $("<p>").addClass(me.li_div_divAbstract).addClass("blog-abstract")
-
     }
     console.log(me.ul)
 

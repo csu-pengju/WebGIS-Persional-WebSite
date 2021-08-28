@@ -6,16 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="author" content="Yaofeng">
     <title>blogs</title>
-    <link rel="stylesheet" href="./markdown.min.css">
-    <style>
-
-    </style>
+<!--    <link rel="stylesheet" href="./markdown.min.css">-->
+    <link rel="stylesheet" href="../css/blog_template.css">
+    <script src="../../support/jquery-3.4.1.min.js"></script>
+    <script src="../js/blog_template.js"></script>
 </head>
 <body>
-<h1 id="h1-helllo"><a name="helllo" class="reference-link"></a><span class="header-link octicon octicon-link"></span>helllo</h1><h1 id="h1-world"><a name="world" class="reference-link"></a><span class="header-link octicon octicon-link"></span>world</h1><ul>
-    <li>大苏打<h2 id="h2-dsd"><a name="dsd" class="reference-link"></a><span class="header-link octicon octicon-link"></span>dsd</h2></li></ul>
-<ol>
-    <li>dsdsd</li></ol>
+<div class="blog_list"></div>
+<div class="blog_container">
+    <div style="margin-top: 50px;margin-left: 40px">
+        <span><a href="../../index.jsp" style="text-decoration: none;margin-left: 12px;margin-top:5px;font-size: 22px">首页 ></a></span>
+        <span><a href="blog_list.html" style="text-decoration: none;margin-left: 12px;margin-top:5px;font-size: 22px">文章列表 ></a></span>
+        <span style="text-decoration: none;margin-left: 12px;margin-top:5px;font-size: 22px">城市交通建模</span>
+    </div>
+    <div class="blog_title">
+        <div class="date_month">
+            <span class="date-day"></span>
+            <span class="date-month"></span>
+        </div>
+        <div class="blog_title_author">
+            <span class="blog-title"></span>
+            <span class="author_time">
+                <span class="blog_author"></span>
+                <span class="blog_time"></span>
+            </span>
+        </div>
+    </div>
+    <div class="blog_content"></div>
+</div>
+<script>
+    (function() {
+    }).call(this);
+    $(document).ready(function () {
+        let blog_filename = get_blog_filename()
+
+        let blogTemplate = new BlogTemplate(blog_filename)
+    })
+    function get_blog_filename(){
+        let result;
+        let url=window.location.search; //获取url中"?"符后的字串
+        if(url.indexOf("?")!==-1){
+            result = url.substr(url.indexOf("=")+1);
+        }
+        return result;
+    }
+
+
+
+
+</script>
 </body>
 <script></script>
 </html>

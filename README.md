@@ -3,6 +3,22 @@ A  Java Web Project for WebGIS course . It's a Persional Website covering many a
 
 # update diary
 
+# 2021.08.28 18：54
+
+## modified by Daisy
+
+1. Complete the blog list function. 
+   - When we click blog href ,it will skip to blog list page
+   - here it will show all blogs in database. 
+   - And here only show its basic information like tilte ，author，and abstract etc. 
+   - You can read all  by click “点击阅读全文", and it will skip to blog template
+2. Complete the blog template function.
+   - It shows the detailed information of the blog you choose.
+
+
+
+
+
 # 2021.08.27 22：00
 
 ##  modified by Daisy

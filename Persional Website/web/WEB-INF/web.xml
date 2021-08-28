@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    ArticleServlet
     <servlet>
         <servlet-name>addTree</servlet-name>
         <servlet-class>cn.pj.web.servlets.addTree</servlet-class>
@@ -22,5 +21,22 @@
         <url-pattern>/ArticleServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>getBlogsServlet</servlet-name>
+        <servlet-class>cn.pj.web.servlets.getBlogsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getBlogsServlet</servlet-name>
+        <url-pattern>/getBlogsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getBlogByFileNameServlet</servlet-name>
+        <servlet-class>cn.pj.web.servlets.getBlogByFileNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getBlogByFileNameServlet</servlet-name>
+        <url-pattern>/getBlogByFileNameServlet</url-pattern>
+    </servlet-mapping>
 
 </web-app>

@@ -67,7 +67,7 @@
         <nav class="main_menu_right_side">
           <ul id="ul_menu_right_menu">
             <li class="nav_menu_item" id="nav_menu_item_4">
-              <a href="#">
+              <a href="static/html/blog_list.html">
                 <span>BLOG</span>
               </a>
             </li>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="postgre" uuid="27b2488d-a844-4d11-bcca-799d633f3831">
+    <data-source source="LOCAL" name="PostgreSQL - gisdb@localhost" uuid="2d9c1ad5-1a3d-4783-b887-ece925e22ad2">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
